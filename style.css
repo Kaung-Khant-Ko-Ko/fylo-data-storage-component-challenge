@@ -1,0 +1,159 @@
+body {
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(229, 57%, 11%);
+  background-image: url("./images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 420px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(243, 100%, 93%);
+}
+
+p {
+  margin: 0px;
+}
+
+span {
+  font-weight: 700;
+}
+
+.container {
+  width: 65%;
+  height: 205px;
+
+  display: grid;
+  gap: 3%;
+  grid-template-columns: 38% 59%;
+}
+
+.card {
+  background-color: hsl(228, 56%, 26%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 100px 10px 10px;
+}
+
+.content-1 {
+  width: 80%;
+  height: 80%;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: hsl(229, 57%, 11%);
+  align-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-rows: 50px 155px;
+}
+
+.message {
+  justify-self: end;
+  right: 21.2%;
+  position: absolute;
+  background-color: white;
+
+  width: 175px;
+  height: 75px;
+  z-index: 1;
+  border-radius: 10px;
+
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  color: hsl(243, 100%, 93%);
+}
+
+.message::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 0px;
+  border: solid 30px transparent;
+  border-right-color: white;
+}
+
+.gb-left {
+  font-size: 36px;
+  color: hsl(229, 57%, 11%);
+}
+
+.card-2 {
+  height: 155px;
+  position: relative;
+  top: 50px;
+  border-radius: 10px;
+}
+
+.content-2 {
+  width: 80%;
+  height: 85px;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 0.5fr;
+}
+
+.slider-container {
+  width: 100%;
+  height: 20px;
+  background-color: hsl(229, 57%, 11%);
+  border: 2px solid hsl(229, 57%, 11%);
+  border-radius: 10px;
+}
+
+.slider-bar {
+  width: 81.5%;
+  height: 20px;
+  background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  display: flex;
+  justify-content: right;
+  border-radius: 10px;
+}
+
+.slider {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  align-self: center;
+}
+
+.slider-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.min-value,
+.max-value {
+  font-weight: 700;
+}
+
+.max-value {
+  justify-self: end;
+}

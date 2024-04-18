@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card card-1">
+        <div class="content-1">
+          <div>
+            <img src="./images/logo.svg" alt="Fylo logo" />
+          </div>
+          <div class="icon-container">
+            <div class="icon">
+              <img src="./images/icon-document.svg" alt="Document icon" />
+            </div>
+            <div class="icon">
+              <img src="./images/icon-folder.svg" alt="Folder icon" />
+            </div>
+            <div class="icon">
+              <img src="./images/icon-upload.svg" alt="Upload icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card card-2">
+          <div class="content-2">
+            <p>You’ve used <span>815 GB</span> of your storage</p>
+            <div class="slider-container">
+              <div class="slider-bar">
+                <div class="slider"></div>
+              </div>
+            </div>
+            <div class="slider-text">
+              <p class="min-value">0 GB</p>
+              <p class="max-value">1000 GB</p>
+            </div>
+          </div>
+        </div>
+        <div class="message">
+          <span class="gb-left">185</span><span> GB Left</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
