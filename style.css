@@ -130,13 +130,19 @@ span {
 .slider-bar {
   width: 81.5%;
   height: 20px;
-  background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  background-image: linear-gradient(
+    90deg,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
   display: flex;
   justify-content: right;
   border-radius: 10px;
 }
 
 .slider {
+  position: relative;
+  right: 2px;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -156,4 +162,38 @@ span {
 
 .max-value {
   justify-self: end;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url("./images/bg-mobile.png");
+    background-size: auto;
+  }
+
+  .container {
+    width: 90%;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 195px;
+  }
+
+  .card-container {
+    grid-template-rows: 160px 35px;
+  }
+
+  .card-2 {
+    height: 160px;
+    top: 0px;
+  }
+
+  .message {
+    position: relative;
+    justify-self: center;
+    right: 0px;
+    top: -35px;
+  }
+
+  .message::after {
+    border: 0px;
+  }
 }
